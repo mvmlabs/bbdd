@@ -18,8 +18,29 @@ Com s'han gestionat les dades al llarg dels anys? A continuació analitzem les c
 - **DB redundants**: a cada inserció/modificació es creava un nou fitxer (màster i còpies)
 - Bases de dades en xarxa i jeràrquiques
 
-[The CDC 6600 supercomputer, circa 1964](https://www.advsyscon.com/blog/batch-processing-system/) ![Photo by Arnold Reinhold](images/dbms_6070.png)
+![Photo by Arnold Reinhold](images/dbms_6070.png)
+[The CDC 6600 supercomputer, 1964](https://www.advsyscon.com/blog/batch-processing-system/)
 
+**Anys 70 - 80**
+- L’aparició dels PCs (Personal Computers) estén la informàtica (empreses i institucions)
+- Model E-R (entity-relationship) per Peter Chen (1976)
+- Model de base de dades relacional proposat per E. F. Codd al 1970
+-- DB relacionals 
+-- Primers SGBD comercials (DB2/IBM, Oracle)
+- SQL (Structured Query Language) per a gestionar DB relacionals (inicis dels anys 80)
+
+**Anys 90**
+- Boom de les DB open source (MySQL, PostgreSQL)
+- 4GL pel desenvolupament d’aplicacions basades en DB
+- Accés online a les DB  (entorn client/servidor)
+- Bases de dades distribuïdes
+
+**Actualment**
+- TAD (Tipus de Dades Abstractes)
+- XML DB per a emmagatzemar tipus de dades complexes
+- DB orientades a objectes (OODB)
+- NoSQL per a Big Data i aplicacions web en temps real
+- Cloud DB (distribució i accés al núvol)
 
 ### Bibliografia
 
