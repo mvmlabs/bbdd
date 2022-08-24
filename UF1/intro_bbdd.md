@@ -15,6 +15,7 @@ Com s'han gestionat les dades al llarg dels anys? A continuació analitzem les c
 - Diferents tipus de suports per a emmagatzemar les dades (cintes magnètiques, targetes microperforades, fitxers)
 - **DB redundants**: a cada inserció/modificació es creava un nou fitxer (màster i còpies)
 - Bases de dades en xarxa i jeràrquiques
+
 ![Photo by Arnold Reinhold](images/dbms_6070.png)
 [The CDC 6600 supercomputer, 1964](https://www.advsyscon.com/blog/batch-processing-system/)
 
@@ -22,22 +23,26 @@ Com s'han gestionat les dades al llarg dels anys? A continuació analitzem les c
 - L’aparició dels PCs (Personal Computers) estén la informàtica (empreses i institucions)
 - Model E-R (entity-relationship) per Peter Chen (1976)
 - Model de base de dades relacional proposat per E. F. Codd al 1970
--   DB relacionals 
--   Primers SGBD comercials (DB2/IBM, Oracle)
+- DB relacionals 
+- Primers SGBD comercials (DB2/IBM, Oracle)
 - SQL (Structured Query Language) per a gestionar DB relacionals (inicis dels anys 80)
+
 ![Característiques principals de SQL](images/dbms_7080.jpg)(https://skylineittech.com/sql-course/)
 **Anys 90**
 - Boom de les DB open source (MySQL, PostgreSQL)
 - 4GL pel desenvolupament d’aplicacions basades en DB
 - Accés online a les DB  (entorn client/servidor)
 - Bases de dades distribuïdes
+
 ![Principals DBMS](images/dbms_90.jpg)
+
 **Actualment**
 - TAD (Tipus de Dades Abstractes)
 - XML DB per a emmagatzemar tipus de dades complexes
 - DB orientades a objectes (OODB)
 - NoSQL per a Big Data i aplicacions web en temps real
 - Cloud DB (distribució i accés al núvol)
+
 ![Tendències actuals](images/dbms_nowadays.jpg)
 
 #### DBMS (database management system)
@@ -45,7 +50,7 @@ Un database management system (_DBMS_) és un programari o conjunt d’aplicacio
 #### IS (Information Systems, Sistemes d’Informació, SI)
 Un sistema d'informació (_IS_, Information Systems) o SI, en canvi, és un sistema format per persones, dades, activitats, i en definitiva, el conjunt de recursos que processen la informació d'una organització. Els Sistemes d'Informació informàtics són el camp d'estudi de les Tecnologies de la Informació i la Comunicació (TIC).
 
-== IS <> DBMS ==
+== IS són diferents DBMS ==
 ### Bibliografia
 
 - [**Fundamentos de bases de datos. SILBERSCHATZ, KORTH, SUDARSHAN. 6ª Edición. McGrawHill Education**](https://www.casadellibro.com/libro-fundamentos-de-bases-de-datos/9788448190330/2303933)
