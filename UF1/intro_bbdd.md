@@ -1,7 +1,7 @@
 ## UF1. Introducció a les bases de dades
 
 ### 1. Introducció
-Una **dada** és una representació simbòlica (numèrica, alfabètica, …) d'una entitat (objecte de la vida real). No té valor semàntic (sentit) per si mateixa. En canvi, si contextualitzem aquesta dada, estem generant **informació**. El ordinadors no són capaços d’interpretar la informació per si mateixos (a diferència dels éssers humans, que sí que ho podem fer). Els programes informàtics però,  necessiten dades (d’entrada) per a poder executar-se, que analitzen i transformen, i així retornar noves dades (de sortida) de valor per a l’usuari del programa.
+Una **dada** és una representació simbòlica (numèrica, alfabètica, …) d'una característica d’una entitat (objecte de la vida real). No té valor semàntic (sentit) per si mateixa. En canvi, si contextualitzem aquesta dada, estem generant **informació**. El ordinadors no són capaços d’interpretar la informació per si mateixos (a diferència dels éssers humans, que sí que ho podem fer). Els programes informàtics però,  necessiten dades (d’entrada) per a poder executar-se, que analitzen i transformen, i així retornar noves dades (de sortida) de valor per a l’usuari del programa.
 
 Les **metadades** són dades sobre les dades. És tota aquella informació descriptiva sobre el context, qualitat, condició o característiques d'un recurs, dada o objecte amb la finalitat de facilitar-ne la recuperació, autentificació, avaluació, preservació i/o interoperabilitat.
 
@@ -23,8 +23,8 @@ Com s'han gestionat les dades al llarg dels anys? A continuació analitzem les c
 - L’aparició dels PCs (Personal Computers) estén la informàtica (empreses i institucions)
 - Model E-R (entity-relationship) per Peter Chen (1976)
 - Model de base de dades relacional proposat per E. F. Codd al 1970
-DB relacionals 
-Primers SGBD comercials (DB2/IBM, Oracle)
+	- DB relacionals 
+	- Primers SGBD comercials (DB2/IBM, Oracle)
 - SQL (Structured Query Language) per a gestionar DB relacionals (inicis dels anys 80)
 
 ![Característiques principals de SQL](images/dbms_7080.jpg)
@@ -52,7 +52,9 @@ Un database management system (*DBMS*) és un programari o conjunt d’aplicacio
 #### IS (Information Systems, Sistemes d’Informació, SI)
 Un sistema d'informació (*IS*, Information Systems) o SI, en canvi, és un sistema format per persones, dades, activitats, i en definitiva, el conjunt de recursos que processen la informació d'una organització. Els Sistemes d'Informació informàtics són el camp d'estudi de les Tecnologies de la Informació i la Comunicació (TIC).
 
-``` Un *IS* és diferent d'un *DBMS* ```
+``` 
+Un _IS_ és diferent d'un _DBMS_ 
+```
 
 #### Evolució dels DBMS (database management systes)
 ![Esquema de l'evolució dels DBMS](images/evolucio_dbms.jpg)
@@ -63,7 +65,7 @@ Organitzem el nostre entorn en “mons”:
 - el **món conceptual**: conjunt de coneixements o informacions obtinguts mitjançant l’observació de la part del món real que ens interessa
 - el **món de les representacions**: format per les representacions informàtiques, o dades, del món conceptual, necessàries per poder treballar
 
-#### Conceptualització del nostre entorn ####
+#### Conceptualització del nostre entorn 
 ![Esquema dels 3 mons](images/conceptualitzacio_entorn.png)
 
 No podem transformar les observacions del món real en dades informàtiques de manera automàtica, així que cal seguir el procés de disseny següent:
@@ -78,14 +80,16 @@ Exemple: color, edat, oficina, material
 - Els *valors* són els continguts concrets dels atributs, les determinacions concretes que assoleixen.
 Exemple: vermell, 17, BCN-003, fusta
 
-```A més dels tres elements bàsics que caracteritzen la informació (entitats, atributs i valors), cal tenir en compte el factor cronològic, ja que la informació no és independent del temps.```
+```
+A més dels tres elements bàsics que caracteritzen la informació (entitats, atributs i valors), cal tenir en compte el factor cronològic, ja que la informació no és independent del temps.
+```
 
-#### Entitats ####
+##### Entitats
 Quan parlem d’una entitat, cal diferenciar entre **entitat tipus** i **entitat instància**.
-- **entitat tipus (template)**: tipus genèric d’entitat (abstracció), que fa referència a una classe de coses (cotxe, arbre, alumne,...)
+- **entitat tipus (_template_)**: tipus genèric d’entitat (abstracció), que fa referència a una classe de coses (cotxe, arbre, alumne,...)
 - **entitat instància**: conceptualització d’un objecte concret del món real (Ford Mustang Vermell), distingible dels altres objectes del mateix tipus, gràcies a alguna propietat (com podria ser el valor de l’atribut matrícula).
 
-#### Atributs ####
+##### Atributs
 Tal i com hem dit, els atributs són les propietats que ens interessen de les entitats que hem de modelar. Aquestes propietats poden tenir valors diferents i es poden realitzar una sèrie d’operacions entre aquests valors (calcular edats, comparar salaris, …).
 
 Un **tipus de dada** defineix un conjunt de valors amb unes característiques comunes que els fan compatibles, per la qual cosa també defineix una sèrie d’operacions admissibles sobre aquests valors. Exemple: enters, caràcters, booleans,...
@@ -96,6 +100,35 @@ De vegades, el valor d’un atribut és desconegut o, fins i tot, no existeix. E
 
 Un **atribut identificador** és el que permet distingir inequívocament cada entitat instància de la resta. En ser un valor és únic, aquest no es repeteix en les diferents entitats instància. Tot atribut o conjunt d’atributs que permeten identificar una entitat tipus rep el nom de **clau**.
 
+#### Representacions informàtiques
+
+Recordem que una *dada* és una representació simbòlica (numèrica, alfabètica, …) d'una característica d’una entitat (objecte de la vida real). Per tal de processar i analitzar un conjunt de dades, hi ha diversos tipus de representació. La forma més habitual és la **representació tabular**.
+
+![Representació tabular de l'entitat Notes](images/representacio_tabular.jpg)
+
+Cada taula representa una entitat tipus, i està estructurada en files (agrupacions horitzontals de cel·les) i columnes (agrupacions verticals de cel·les):
+- cada fila representa una entitat instància (*registre*).
+- cada columna representa un atribut (*camp*).
+- cada cel·la (cada intersecció d'una fila i d'una columna) emmagatzema el *valor* que tingui l'atribut de l'entitat instància corresponent.
+
+A més de poder emmagatzemar les dades, caldrà poder accedir i operar amb elles. Bàsicament, hi ha dues maneres d'accedir a les dades:
+- L'**accés seqüencial** a un registre determinat, que implica l'accés previ a tots els registres anteriors.
+- L'**accés directe** a un registre concret, que implica l'obtenció directa del registre desitjat.
+
+A més, hi ha una altra classificació habitual de tipologies d'accessos:
+- L'**accés per valor**, que permet l'obtenció del registre desitjat en funció del valor d'algun (o alguns) dels seus camps, sense considerar la posició que ocupa el registre.
+- L'**accés per posició**, que obre l'accés a un registre que ocupa una posició determinada, sense considerar el contingut del registre.
+
+Les quatre tipologies d'accés a dades més freqüents:
+- **SP** (*accés seqüencial per posició*): un cop s’ha accedit a un registre que es troba en una posició determinada, s'accedeix al registre que ocupa la posició immediatament posterior.
+- **DP** (*accés directe per posició*): s'obté directament un registre pel fet d'ocupar una posició determinada.
+- **SV** (*accés seqüencial per valor*): un cop s’ha accedit a un registre que té un valor concret, s'accedeix al registre que ocupa la posició immediatament posterior, segons l'ordenació establerta a partir un camp determinat (o més). L'ordre serà creixent o decreixent, si es tracta d'un camp numèric, o alfabètic ascendent o descendent, si es tracta d'un camp de caràcters.
+- **DV** (*accés directe per valor*): s'obté directament un registre pel fet de tenir un valor determinat en un dels seus atributs (o més).
+
+|				 | P - posició | V - valor  |
+| -------------- | ----------- | -----------
+| S - seqüencial | SP 		   | SV			|
+| D - directe    | DP          | DV			|
 
 
 ### Bibliografia
