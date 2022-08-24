@@ -146,6 +146,12 @@ Aquest model però, no garanteix totalment la independència entre dades i aplic
 
 ![Els tres nivells de l’arquitectura ANSI-SPARC](images/ansix3sparc.jpg)(https://en.wikipedia.org/wiki/ANSI-SPARC_Architecture)
 
+L'avantatge d'aquesta arquitectura en nivells és que proporciona independència lògica i física de les dades respecte a les aplicacions:
+
+- **Independència lògica**: es poden fer canvis en el nivell conceptual (afegir taules o atributs) sense que sigui necessari reescriure totes les aplicacions.
+- **Independència física**: és possible modificar la ubicació dels fitxers que contenen les dades sense que es vegin afectades les aplicacions.
+
+
 ### Bibliografia
 
 - [**Fundamentos de bases de datos. SILBERSCHATZ, KORTH, SUDARSHAN. 6ª Edición. McGrawHill Education**](https://www.casadellibro.com/libro-fundamentos-de-bases-de-datos/9788448190330/2303933)
