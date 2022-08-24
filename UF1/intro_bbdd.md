@@ -10,7 +10,7 @@ Així, disposem de moltes dades que calen relacionar i emmagatzemar, per tal de 
 
 ### 2. Gestió de les bases de dades
 
-### BIBLIOGRAFIA
+### Bibliografia
 
-- **[Fundamentos de bases de datos. SILBERSCHATZ, KORTH, SUDARSHAN. 6ª Edición. McGrawHill Education]**(https://www.casadellibro.com/libro-fundamentos-de-bases-de-datos/9788448190330/2303933)
-- **[Bases de dades. Planas, Jaume Sistac. Edicions de la Universitat Oberta de catalunya, 1a Edició (2000)]** (https://www.editorialuoc.cat/bases-de-dades)
+- [**Fundamentos de bases de datos. SILBERSCHATZ, KORTH, SUDARSHAN. 6ª Edición. McGrawHill Education**](https://www.casadellibro.com/libro-fundamentos-de-bases-de-datos/9788448190330/2303933)
+- [**Bases de dades. Planas, Jaume Sistac. Edicions de la Universitat Oberta de catalunya, 1a Edició (2000)**] (https://www.editorialuoc.cat/bases-de-dades)
