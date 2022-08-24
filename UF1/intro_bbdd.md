@@ -100,38 +100,3 @@ De vegades, el valor d’un atribut és desconegut o, fins i tot, no existeix. E
 
 Un **atribut identificador** és el que permet distingir inequívocament cada entitat instància de la resta. En ser un valor és únic, aquest no es repeteix en les diferents entitats instància. Tot atribut o conjunt d’atributs que permeten identificar una entitat tipus rep el nom de **clau**.
 
-#### Representacions informàtiques
-
-Recordem que una *dada* és una representació simbòlica (numèrica, alfabètica, …) d'una característica d’una entitat (objecte de la vida real). Per tal de processar i analitzar un conjunt de dades, hi ha diversos tipus de representació. La forma més habitual és la **representació tabular**.
-
-![Representació tabular de l'entitat Notes](images/representacio_tabular.jpg)
-
-Cada taula representa una entitat tipus, i està estructurada en files (agrupacions horitzontals de cel·les) i columnes (agrupacions verticals de cel·les):
-- cada fila representa una entitat instància (*registre*).
-- cada columna representa un atribut (*camp*).
-- cada cel·la (cada intersecció d'una fila i d'una columna) emmagatzema el *valor* que tingui l'atribut de l'entitat instància corresponent.
-
-A més de poder emmagatzemar les dades, caldrà poder accedir i operar amb elles. Bàsicament, hi ha dues maneres d'accedir a les dades:
-- L'**accés seqüencial** a un registre determinat, que implica l'accés previ a tots els registres anteriors.
-- L'**accés directe** a un registre concret, que implica l'obtenció directa del registre desitjat.
-
-A més, hi ha una altra classificació habitual de tipologies d'accessos:
-- L'**accés per valor**, que permet l'obtenció del registre desitjat en funció del valor d'algun (o alguns) dels seus camps, sense considerar la posició que ocupa el registre.
-- L'**accés per posició**, que obre l'accés a un registre que ocupa una posició determinada, sense considerar el contingut del registre.
-
-Les quatre tipologies d'accés a dades més freqüents:
-- **SP** (*accés seqüencial per posició*): un cop s’ha accedit a un registre que es troba en una posició determinada, s'accedeix al registre que ocupa la posició immediatament posterior.
-- **DP** (*accés directe per posició*): s'obté directament un registre pel fet d'ocupar una posició determinada.
-- **SV** (*accés seqüencial per valor*): un cop s’ha accedit a un registre que té un valor concret, s'accedeix al registre que ocupa la posició immediatament posterior, segons l'ordenació establerta a partir un camp determinat (o més). L'ordre serà creixent o decreixent, si es tracta d'un camp numèric, o alfabètic ascendent o descendent, si es tracta d'un camp de caràcters.
-- **DV** (*accés directe per valor*): s'obté directament un registre pel fet de tenir un valor determinat en un dels seus atributs (o més).
-
-|				 | P - posició | V - valor  |
-| -------------- | ----------- | -----------
-| S - seqüencial | SP 		   | SV			|
-| D - directe    | DP          | DV			|
-
-
-### Bibliografia
-
-- [**Fundamentos de bases de datos. SILBERSCHATZ, KORTH, SUDARSHAN. 6ª Edición. McGrawHill Education**](https://www.casadellibro.com/libro-fundamentos-de-bases-de-datos/9788448190330/2303933)
-- [**Bases de dades. Planas, Jaume Sistac. Edicions de la Universitat Oberta de catalunya, 1a Edició (2000)**](https://www.editorialuoc.cat/bases-de-dades)
