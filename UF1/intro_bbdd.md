@@ -23,11 +23,13 @@ Com s'han gestionat les dades al llarg dels anys? A continuació analitzem les c
 - L’aparició dels PCs (Personal Computers) estén la informàtica (empreses i institucions)
 - Model E-R (entity-relationship) per Peter Chen (1976)
 - Model de base de dades relacional proposat per E. F. Codd al 1970
-- DB relacionals 
-- Primers SGBD comercials (DB2/IBM, Oracle)
+DB relacionals 
+Primers SGBD comercials (DB2/IBM, Oracle)
 - SQL (Structured Query Language) per a gestionar DB relacionals (inicis dels anys 80)
 
-![Característiques principals de SQL](images/dbms_7080.jpg)(https://skylineittech.com/sql-course/)
+![Característiques principals de SQL](images/dbms_7080.jpg)
+[Característiques principals de SQL](https://skylineittech.com/sql-course/)
+
 **Anys 90**
 - Boom de les DB open source (MySQL, PostgreSQL)
 - 4GL pel desenvolupament d’aplicacions basades en DB
@@ -50,7 +52,7 @@ Un database management system (*DBMS*) és un programari o conjunt d’aplicacio
 #### IS (Information Systems, Sistemes d’Informació, SI)
 Un sistema d'informació (*IS*, Information Systems) o SI, en canvi, és un sistema format per persones, dades, activitats, i en definitiva, el conjunt de recursos que processen la informació d'una organització. Els Sistemes d'Informació informàtics són el camp d'estudi de les Tecnologies de la Informació i la Comunicació (TIC).
 
-``` Un IS és diferent d'un DBMS ```
+``` Un *IS* és diferent d'un *DBMS* ```
 
 #### Evolució dels DBMS (database management systes)
 ![Esquema de l'evolució dels DBMS](images/evolucio_dbms.jpg)
@@ -63,19 +65,38 @@ Organitzem el nostre entorn en “mons”:
 
 #### Conceptualització del nostre entorn ####
 ![Esquema dels 3 mons](images/conceptualitzacio_entorn.png)
+
 No podem transformar les observacions del món real en dades informàtiques de manera automàtica, així que cal seguir el procés de disseny següent:
 - **fase de disseny lògic**: es treballa amb el model abstracte de dades resultant de finalitzar l’etapa de disseny conceptual, per tal de traduir-ho al model de dades utilitzat pel DBMS amb el qual es vol implementar i mantenir la futura DB.
 - **fase de disseny físic**: optimització de l’esquema lògic obtingut en la fase de disseny anterior, per tal d’incrementar l’eficiència en algunes de les operacions a fer amb les dades.
 
 La informació és la conceptualització obtinguda a partir de l’observació del *món real*. Es caracteritza, fonamentalment, per tres elements: entitats, atributs i valors. 
-- Les entitats són els objectes del món real que conceptualitzem. Són identificables, és a dir, distingibles els uns dels altres. I ens interessen algunes (com a mínim una) de les seves propietats (atributs).
+- Les *entitats* són els objectes del món real que conceptualitzem. Són identificables, és a dir, distingibles els uns dels altres. I ens interessen algunes (com a mínim una) de les seves propietats (atributs).
 Exemple: Cotxe, Alumne, Banc, Moble
-- Els atributs són les propietats que ens interessen de les entitats. 
+- Els *atributs* són les propietats que ens interessen de les entitats. 
 Exemple: color, edat, oficina, material
-- Els valors són els continguts concrets dels atributs, les determinacions concretes que assoleixen.
+- Els *valors* són els continguts concrets dels atributs, les determinacions concretes que assoleixen.
 Exemple: vermell, 17, BCN-003, fusta
 
-A més dels tres elements bàsics que caracteritzen la informació (entitats, atributs i valors), cal tenir en compte el factor cronològic, ja que la informació no és independent del temps .
+```A més dels tres elements bàsics que caracteritzen la informació (entitats, atributs i valors), cal tenir en compte el factor cronològic, ja que la informació no és independent del temps.```
+
+#### Entitats ####
+Quan parlem d’una entitat, cal diferenciar entre **entitat tipus** i **entitat instància**.
+- **entitat tipus (template)**: tipus genèric d’entitat (abstracció), que fa referència a una classe de coses (cotxe, arbre, alumne,...)
+- **entitat instància**: conceptualització d’un objecte concret del món real (Ford Mustang Vermell), distingible dels altres objectes del mateix tipus, gràcies a alguna propietat (com podria ser el valor de l’atribut matrícula).
+
+#### Atributs ####
+Tal i com hem dit, els atributs són les propietats que ens interessen de les entitats que hem de modelar. Aquestes propietats poden tenir valors diferents i es poden realitzar una sèrie d’operacions entre aquests valors (calcular edats, comparar salaris, …).
+
+Un **tipus de dada** defineix un conjunt de valors amb unes característiques comunes que els fan compatibles, per la qual cosa també defineix una sèrie d’operacions admissibles sobre aquests valors. Exemple: enters, caràcters, booleans,...
+
+Perquè un valor d’un atribut sigui vàlid, ha de pertànyer al conjunt de valors acceptables per a l’atribut en qüestió. Aquest conjunt de valors vàlids s’anomena **domini**. Un domini pot ser predefinit (enters, reals,...) o definit per l’usuari (rang d’edat).
+
+De vegades, el valor d’un atribut és desconegut o, fins i tot, no existeix. El **valor nul** indica que no hi ha cap valor associat a un atribut determinat d’una entitat instància concreta.
+
+Un **atribut identificador** és el que permet distingir inequívocament cada entitat instància de la resta. En ser un valor és únic, aquest no es repeteix en les diferents entitats instància. Tot atribut o conjunt d’atributs que permeten identificar una entitat tipus rep el nom de **clau**.
+
+
 
 ### Bibliografia
 
