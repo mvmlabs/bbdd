@@ -53,7 +53,7 @@ Un database management system (*DBMS*) és un programari o conjunt d’aplicacio
 Un sistema d'informació (*IS*, Information Systems) o SI, en canvi, és un sistema format per persones, dades, activitats, i en definitiva, el conjunt de recursos que processen la informació d'una organització. Els Sistemes d'Informació informàtics són el camp d'estudi de les Tecnologies de la Informació i la Comunicació (TIC).
 
 ``` 
-Un _IS_ és diferent d'un _DBMS_ 
+Un **IS** és diferent d'un **DBMS** 
 ```
 
 #### Evolució dels DBMS (database management systes)
@@ -81,7 +81,8 @@ Exemple: color, edat, oficina, material
 Exemple: vermell, 17, BCN-003, fusta
 
 ```
-A més dels tres elements bàsics que caracteritzen la informació (entitats, atributs i valors), cal tenir en compte el factor cronològic, ja que la informació no és independent del temps.
+A més dels tres elements bàsics que caracteritzen la informació (entitats, atributs i valors), 
+cal tenir en compte el factor cronològic, ja que la informació no és independent del temps.
 ```
 
 ##### Entitats
@@ -136,6 +137,14 @@ A l’hora de parlar de les representacions informàtiques de dades, cal tenir e
 
 - **nivell lògic**: es treballa segons la conceptualització de les dades, sense necessitat de saber com s’emmagatzemen de manera física
 - **nivell físic**: requereix un coneixement a baix nivell de la implementació física de l'organització de les dades i l'accés a aquestes
+
+Aquest model però, no garanteix totalment la independència entre dades i aplicacions, així que l’any 1975, l’Organisme d’Estandarització dls Estats Units (ANSI) proposa una arquitectura a 3 nivells, anomenada Arquitectura ANSI/X3/SPARC:
+
+1. **Nivell Extern o Lògic** (*User Views*): descriu una part de la base de dades rellevant per a aquest usuari i s’exclouen dades irrellevants o a les quals no té permisos d'accés
+2. **Nivell Conceptual**: descriu les dades a emmagatzemar dins la base de dades i com estan interrelacionades, sense especificar com s'emmagatzemen físicament
+3. **Nivell Intern o Físic**: implica com es representa físicament la base de dades al sistema informàtic, descrivint com s'emmagatzemen realment a la base de dades i al maquinari de l'ordinador
+
+![Els tres nivells de l’arquitectura ANSI-SPARC](images/ansix3sparc.jpg)(https://en.wikipedia.org/wiki/ANSI-SPARC_Architecture)
 
 ### Bibliografia
 
