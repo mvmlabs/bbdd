@@ -10,6 +10,17 @@ Així, disposem de moltes dades que calen relacionar i emmagatzemar, per tal de 
 
 ### 2. Gestió de les bases de dades
 
+Com s'han gestionat les dades al llarg dels anys? A continuació analitzem les característiques principals de cada periode:
+ 
+**Anys 60 - 70**
+- Aplicacions de propòsit específic i processament per lots
+- Diferents tipus de suports per a emmagatzemar les dades (cintes magnètiques, targetes microperforades, fitxers)
+- **DB redundants**: a cada inserció/modificació es creava un nou fitxer (màster i còpies)
+- Bases de dades en xarxa i jeràrquiques
+
+[The CDC 6600 supercomputer, circa 1964](https://www.advsyscon.com/blog/batch-processing-system/) ![Photo by Arnold Reinhold](images/dbms_6070.png)
+
+
 ### Bibliografia
 
 - [**Fundamentos de bases de datos. SILBERSCHATZ, KORTH, SUDARSHAN. 6ª Edición. McGrawHill Education**](https://www.casadellibro.com/libro-fundamentos-de-bases-de-datos/9788448190330/2303933)
