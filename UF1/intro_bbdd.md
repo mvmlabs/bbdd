@@ -146,7 +146,7 @@ Aquest model però, no garanteix totalment la independència entre dades i aplic
 3. **Nivell Intern o Físic**: implica com es representa físicament la base de dades al sistema informàtic, descrivint com s'emmagatzemen realment a la base de dades i al maquinari de l'ordinador
 
 ![Els tres nivells de l’arquitectura ANSI-SPARC](images/ansix3sparc.jpg)
-[Els tres nivells de l’arquitectura ANSI-SPARC] (https://en.wikipedia.org/wiki/ANSI-SPARC_Architecture)
+[Els tres nivells de l’arquitectura ANSI-SPARC](https://en.wikipedia.org/wiki/ANSI-SPARC_Architecture)
 
 L'avantatge d'aquesta arquitectura en nivells és que proporciona independència lògica i física de les dades respecte a les aplicacions:
 
