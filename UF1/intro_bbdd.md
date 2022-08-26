@@ -49,11 +49,12 @@ Com s'han gestionat les dades al llarg dels anys? A continuació analitzem les c
 
 #### DBMS (database management system)
 Un database management system (*DBMS*) és un programari o conjunt d’aplicacions que permet accedir a les dades i operar amb elles (creació, modificació, eliminació...) així com atendre les sol·licituds d'accés a la base de dades que fan els usuaris i/o aplicacions a la base de dades. Els DBMS gestionen grans quantitats d’informació, garantint la seva fiabilitat.
-#### IS (Information Systems, Sistemes d’Informació, SI)
-Un sistema d'informació (*IS*, Information Systems) o SI, en canvi, és un sistema format per persones, dades, activitats, i en definitiva, el conjunt de recursos que processen la informació d'una organització. Els Sistemes d'Informació informàtics són el camp d'estudi de les Tecnologies de la Informació i la Comunicació (TIC).
+#### IS (information system, sistema d’informació, SI)
+Un sistema d'informació (*IS*, information system) o SI, en canvi, és un sistema format per persones, dades, activitats, i en definitiva, el conjunt de recursos que processen la informació d'una organització. Els Sistemes d'Informació informàtics són el camp d'estudi de les Tecnologies de la Informació i la Comunicació (TIC).
 
 ``` 
-Un sistema d'informació (IS) és diferent d'un sistema gestor de bases de dades (DBMS) 
+Cal diferenciar un sistema d'informació (IS) d'un sistema gestor de bases de dades (DBMS),
+ja que són dos conceptes diferents. 
 ```
 
 #### Evolució dels DBMS (database management systes)
@@ -153,6 +154,9 @@ L'avantatge d'aquesta arquitectura en nivells és que proporciona independència
 - **Independència lògica**: es poden fer canvis en el nivell conceptual (afegir taules o atributs) sense que sigui necessari reescriure totes les aplicacions.
 - **Independència física**: és possible modificar la ubicació dels fitxers que contenen les dades sense que es vegin afectades les aplicacions.
 
+### 4. Sistemes gestors de bases de dades
+
+Recordem que un DBMS és una eina que permet als usuaris gestionar les bases de dades.
 
 ### Bibliografia
 
