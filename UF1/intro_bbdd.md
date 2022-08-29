@@ -53,8 +53,8 @@ Un database management system (*DBMS*) és un programari o conjunt d’aplicacio
 Un sistema d'informació (*IS*, information system) o SI, en canvi, és un sistema format per persones, dades, activitats, i en definitiva, el conjunt de recursos que processen la informació d'una organització. Els Sistemes d'Informació informàtics són el camp d'estudi de les Tecnologies de la Informació i la Comunicació (TIC).
 
 ``` 
-Cal diferenciar un sistema d'informació (IS) d'un sistema gestor de bases de dades (DBMS),
-ja que són dos conceptes diferents. 
+Cal diferenciar un sistema d'informació (IS) d'un sistema gestor de bases de dades 
+(DBMS), ja que són dos conceptes diferents. 
 ```
 
 #### Evolució dels DBMS (database management systes)
@@ -64,6 +64,27 @@ ja que són dos conceptes diferents.
 
 Recordem que un DBMS és una eina que permet als usuaris gestionar les bases de dades. Però, quin són els seus objectius principals?
 
+Objectius
+
+- Abstracció de la informació: la forma de l’emmagatzemament físic de les dades és transparent per l’usuari. Existeixen diferents nivells d’abstracció.
+- Independència entre dades i aplicacions: capacitat de modificar un esquema de definició de les dades sense que això afecti a les aplicacions. Hi ha 2 nivells d'independència:
+	- independència física: és possible modificar l'esquema físic sense afectar les aplicacions.
+	- independència lògica: és possible modificar l'esquema lògic sense afectar les aplicacions. El programador no ha de conèixer l'estructura interna de les dades per tal de poder manipular-les. És més difícil d'assolir ja que normalment les aplicacions en depenen fortament.
+- Redundància mínima: cal evitar les repeticions de dades. En principi pot semblar que l'òptim és tenir una redundància mínima o zero però esta demostrat que tenir certa redundància pot ser útil en operacions com la cerca de dades a la base de dades.
+- Consistència: ha de garantir que les dades han d’estar actualitzades sempre que es vulguin consultar. Molt relacionat amb la redundància (quanta més redundància de dades hi ha, més complicat es mantenir aquestes dades actualitzades en cas d'actualitzacions).
+- Seguretat: un dels objectius principals dels DBMS és mantenir protegides les dades vers els accessos accidentals o intencionats per part d'usuaris no autoritzats.
+- Integritat: Són les mesures necessàries que pren el SGBD per tal de garantir la correcció de la base de dades. Les dades poden quedar inconsistents per les següents raons:
+	- Errors de maquinari
+	- Actualitzacions incompletes
+	- Inserció de dades no vàlides.
+El DBA és qui defineix les regles d'integritat de les dades de la base de dades. Les regles d'integritat tenen 3 components
+La restricció d'integritat a aplicar
+La resposta en cas de violació de la restricció
+La condició d'inici d'aplicació de la restricció (trigger).
+Recuperació i còpies de seguretat: El SGBD ha de poder realitzar còpies de seguretat de forma eficient per així evitar la perduda de dades. A les còpies de seguretat són anomenades backups. Per poder restaurar les dades és fa ús dels registres o bitàcoles (arxius de log).
+Control de la concurrència: El SGBD ha de garantir que l’accés simultani a les dades i n'ha d'assegurar la consistència de la informació. El més habitual és que una base de dades treballi en un sistema multiusuari i multiprogramat.
+Temps de resposta: Les bases de dades estan dissenyades per tal de ser utilitzades per usuaris finals i per tant cal assegurar un temps de resposta adequat per a les epsecificacions de les aplicacions que utilitzen la base de dades.
+Informació sobre les dades o Metadades: 
 
 ### 4. Representació de les dades
 Organitzem el nostre entorn en “mons”:
