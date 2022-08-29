@@ -60,7 +60,12 @@ ja que són dos conceptes diferents.
 #### Evolució dels DBMS (database management systes)
 ![Esquema de l'evolució dels DBMS](images/evolucio_dbms.jpg)
 
-### 3. Representació de les dades
+### 3. Sistemes gestors de bases de dades (DBMS)
+
+Recordem que un DBMS és una eina que permet als usuaris gestionar les bases de dades. Però, quin són els seus objectius principals?
+
+
+### 4. Representació de les dades
 Organitzem el nostre entorn en “mons”:
 - el **món real**: constituït pels objectes (materials o no) de la realitat que ens interessen i amb els quals haurem de treballar
 - el **món conceptual**: conjunt de coneixements o informacions obtinguts mitjançant l’observació de la part del món real que ens interessa
@@ -154,9 +159,6 @@ L'avantatge d'aquesta arquitectura en nivells és que proporciona independència
 - **Independència lògica**: es poden fer canvis en el nivell conceptual (afegir taules o atributs) sense que sigui necessari reescriure totes les aplicacions.
 - **Independència física**: és possible modificar la ubicació dels fitxers que contenen les dades sense que es vegin afectades les aplicacions.
 
-### 4. Sistemes gestors de bases de dades
-
-Recordem que un DBMS és una eina que permet als usuaris gestionar les bases de dades.
 
 ### Bibliografia
 
