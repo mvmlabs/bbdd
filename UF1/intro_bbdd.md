@@ -77,14 +77,14 @@ Objectius
 	- Errors de maquinari
 	- Actualitzacions incompletes
 	- Inserció de dades no vàlides.
-El DBA és qui defineix les regles d'integritat de les dades de la base de dades. Les regles d'integritat tenen 3 components
-La restricció d'integritat a aplicar
-La resposta en cas de violació de la restricció
-La condició d'inici d'aplicació de la restricció (trigger).
-Recuperació i còpies de seguretat: El SGBD ha de poder realitzar còpies de seguretat de forma eficient per així evitar la perduda de dades. A les còpies de seguretat són anomenades backups. Per poder restaurar les dades és fa ús dels registres o bitàcoles (arxius de log).
-Control de la concurrència: El SGBD ha de garantir que l’accés simultani a les dades i n'ha d'assegurar la consistència de la informació. El més habitual és que una base de dades treballi en un sistema multiusuari i multiprogramat.
-Temps de resposta: Les bases de dades estan dissenyades per tal de ser utilitzades per usuaris finals i per tant cal assegurar un temps de resposta adequat per a les epsecificacions de les aplicacions que utilitzen la base de dades.
-Informació sobre les dades o Metadades: 
+	- El DBA és qui defineix les regles d'integritat de les dades de la base de dades. Les regles d'integritat tenen 3 components
+		- La restricció d'integritat a aplicar
+		- La resposta en cas de violació de la restricció
+		- La condició d'inici d'aplicació de la restricció (trigger).
+- Recuperació i còpies de seguretat: El SGBD ha de poder realitzar còpies de seguretat de forma eficient per així evitar la perduda de dades. A les còpies de seguretat són anomenades backups. Per poder restaurar les dades és fa ús dels registres o bitàcoles (arxius de log).
+- Control de la concurrència: El SGBD ha de garantir que l’accés simultani a les dades i n'ha d'assegurar la consistència de la informació. El més habitual és que una base de dades treballi en un sistema multiusuari i multiprogramat.
+- Temps de resposta: Les bases de dades estan dissenyades per tal de ser utilitzades per usuaris finals i per tant cal assegurar un temps de resposta adequat per a les epsecificacions de les aplicacions que utilitzen la base de dades.
+- Informació sobre les dades o Metadades: 
 
 ### 4. Representació de les dades
 Organitzem el nostre entorn en “mons”:
