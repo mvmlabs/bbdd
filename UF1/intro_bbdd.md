@@ -64,16 +64,16 @@ Cal diferenciar un sistema d'informació (IS) d'un sistema gestor de bases de da
 
 Recordem que un DBMS és una eina que permet als usuaris gestionar les bases de dades. Però, quin són els seus objectius principals?
 
-Objectius
+_Objectius_
 
-- Abstracció de la informació: la forma de l’emmagatzemament físic de les dades és transparent per l’usuari. Existeixen diferents nivells d’abstracció.
-- Independència entre dades i aplicacions: capacitat de modificar un esquema de definició de les dades sense que això afecti a les aplicacions. Hi ha 2 nivells d'independència:
+- *Abstracció de la informació*: la forma de l’emmagatzemament físic de les dades és transparent per l’usuari. Existeixen diferents nivells d’abstracció.
+- *Independència entre dades i aplicacions*: capacitat de modificar un esquema de definició de les dades sense que això afecti a les aplicacions. Hi ha 2 nivells d'independència:
 	- independència física: és possible modificar l'esquema físic sense afectar les aplicacions.
 	- independència lògica: és possible modificar l'esquema lògic sense afectar les aplicacions. El programador no ha de conèixer l'estructura interna de les dades per tal de poder manipular-les. És més difícil d'assolir ja que normalment les aplicacions en depenen fortament.
-- Redundància mínima: cal evitar les repeticions de dades. En principi pot semblar que l'òptim és tenir una redundància mínima o zero però esta demostrat que tenir certa redundància pot ser útil en operacions com la cerca de dades a la base de dades.
-- Consistència: ha de garantir que les dades han d’estar actualitzades sempre que es vulguin consultar. Molt relacionat amb la redundància (quanta més redundància de dades hi ha, més complicat es mantenir aquestes dades actualitzades en cas d'actualitzacions).
-- Seguretat: un dels objectius principals dels DBMS és mantenir protegides les dades vers els accessos accidentals o intencionats per part d'usuaris no autoritzats.
-- Integritat: Són les mesures necessàries que pren el SGBD per tal de garantir la correcció de la base de dades. Les dades poden quedar inconsistents per les següents raons:
+- *Redundància mínima*: cal evitar les repeticions de dades. En principi pot semblar que l'òptim és tenir una redundància mínima o zero però esta demostrat que tenir certa redundància pot ser útil en operacions com la cerca de dades a la base de dades.
+- *Consistència*: ha de garantir que les dades han d’estar actualitzades sempre que es vulguin consultar. Molt relacionat amb la redundància (quanta més redundància de dades hi ha, més complicat es mantenir aquestes dades actualitzades en cas d'actualitzacions).
+- *Seguretat*: un dels objectius principals dels DBMS és mantenir protegides les dades vers els accessos accidentals o intencionats per part d'usuaris no autoritzats.
+- *Integritat*: Són les mesures necessàries que pren el DBMS per tal de garantir la correcció de la base de dades. Les dades poden quedar inconsistents per les següents raons:
 	- Errors de maquinari
 	- Actualitzacions incompletes
 	- Inserció de dades no vàlides.
@@ -81,10 +81,25 @@ Objectius
 		- La restricció d'integritat a aplicar
 		- La resposta en cas de violació de la restricció
 		- La condició d'inici d'aplicació de la restricció (trigger).
-- Recuperació i còpies de seguretat: El SGBD ha de poder realitzar còpies de seguretat de forma eficient per així evitar la perduda de dades. A les còpies de seguretat són anomenades backups. Per poder restaurar les dades és fa ús dels registres o bitàcoles (arxius de log).
-- Control de la concurrència: El SGBD ha de garantir que l’accés simultani a les dades i n'ha d'assegurar la consistència de la informació. El més habitual és que una base de dades treballi en un sistema multiusuari i multiprogramat.
-- Temps de resposta: Les bases de dades estan dissenyades per tal de ser utilitzades per usuaris finals i per tant cal assegurar un temps de resposta adequat per a les epsecificacions de les aplicacions que utilitzen la base de dades.
-- Informació sobre les dades o Metadades: 
+- *Recuperació i còpies de seguretat*: El DBMS ha de poder realitzar còpies de seguretat de forma eficient per així evitar la perduda de dades. A les còpies de seguretat són anomenades backups. Per poder restaurar les dades és fa ús dels registres o bitàcoles (arxius de log).
+- Control de la *concurrència*: El DBMS ha de garantir que l’accés simultani a les dades i n'ha d'assegurar la consistència de la informació. El més habitual és que una base de dades treballi en un sistema multiusuari i multiprogramat.
+- *Temps de resposta*: Les bases de dades estan dissenyades per tal de ser utilitzades per usuaris finals i per tant cal assegurar un temps de resposta adequat per a les epsecificacions de les aplicacions que utilitzen la base de dades.
+- Informació sobre les dades o *Metadades*: El sistema ha de tenir informació sobre el mateix sistema (el que s'anomenen metadades), com pot ser els usuaris.
+
+D’altra banda, hem de garantir que les transaccions es realitzin de forma segura complint les propietats ACID:
+
+- *Atomicity* (atomicitat): garanteix que cada transacció es tracta com una única unitat.
+- *Consistency* (consistència): garanteix que una transacció únicament pot portar la BD d’un estat vàlid a un altre
+- *Isolation* (aïllament): garanteix que transaccions concurrents deixen la DB en el mateix estat que si fóssin seqüencials
+- *Durability* (definitivitat): garanteix que un cop finalitzada una transacció, aquesta quedarà desada encara que hi hagi una fallida del sistema
+
+```
+Una transacció, en el context de bases de dades, és una simple operació lògica
+ feta sobre les dades. Un exemple de transacció és la transferència de fons 
+ d'un compte a un altre, encara que consisteixi en diverses operacions individuals
+ (com extreure d'un compte i ingressar a l'altre).
+```
+
 
 ### 4. Representació de les dades
 Organitzem el nostre entorn en “mons”:
