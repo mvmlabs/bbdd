@@ -94,8 +94,8 @@ D’altra banda, hem de garantir que les transaccions es realitzin de forma segu
 - *Durability* (definitivitat): garanteix que un cop finalitzada una transacció, aquesta quedarà desada encara que hi hagi una fallida del sistema
 
 ```
-Una transacció és tot el conjunt d’operacions que s’han de realitzar
-per a obtenir un resultat (s’executen com una unitat)
+Una transacció és tot el conjunt d’operacions que s’han 
+de realitzar per a obtenir un resultat .
 ```
 
 **Funcions, components i tipus
