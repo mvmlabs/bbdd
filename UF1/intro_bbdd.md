@@ -89,12 +89,12 @@ Recordem que un DBMS és una eina que permet als usuaris gestionar les bases de 
 D’altra banda, hem de garantir que les transaccions es realitzin de forma segura complint les propietats ACID:
 
 - *Atomicity* (atomicitat): garanteix que cada transacció es tracta com una única unitat.
-- *Consistency* (consistència): garanteix que una transacció únicament pot portar la BD d’un estat vàlid a un altre
+- *Consistency* (consistència): garanteix que una transacció únicament pot portar la BD d’un estat vàlid a un altre vàlid
 - *Isolation* (aïllament): garanteix que transaccions concurrents deixen la DB en el mateix estat que si fóssin seqüencials
 - *Durability* (definitivitat): garanteix que un cop finalitzada una transacció, aquesta quedarà desada encara que hi hagi una fallida del sistema
 
 ```
-Una transacció és tot el conjunt d’operacions que s’han 
+Una transacció és tot el conjunt d’operacions que s’han
 de realitzar per a obtenir un resultat .
 ```
 
