@@ -245,7 +245,7 @@ A l'hora de dissenyar una base de dades, cal descompondre el procés del disseny
 Les etapes són les següents:
 - **etapa del disseny conceptual**: s'obté una estructura de la informació de la DB, indepdendent de la tecnologia a utilitzar. El resultat és un model de dades d'alt nivell. En el nostre cas, el model entitat-relació (ER)
 - **etapa de disseny lògic**: s'ajusta el model ER (resultat del disseny conceptual) al model DBMS amb el qual s'implementarà la db.
-- **estapa del disseny físic**: es transforma l'estructura obtinguda a l'etapa del disseny lògic de manera que s'assoleixi una major eficiència (mida de buffers, pàgines,...) que dependran del DBMS escollir.
+- **etapa del disseny físic**: es transforma l'estructura obtinguda a l'etapa del disseny lògic de manera que s'assoleixi una major eficiència (mida de buffers, pàgines,...) que dependran del DBMS escollir.
 
 #### El model ER
 
