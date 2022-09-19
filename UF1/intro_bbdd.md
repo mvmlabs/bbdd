@@ -263,6 +263,9 @@ Quines característiques poden tenir els atributs?
 
 ![Exemple d'entitat ALUMNE amb els seus atributs](images/entitat_atribut.jpg)
 
+```
+Una interrelació es defineix com una associació entre entitats
+```
 
 ### Bibliografia
 
