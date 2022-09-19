@@ -162,7 +162,7 @@ No podem transformar les observacions del món real en dades informàtiques de m
 
 La informació és la conceptualització obtinguda a partir de l’observació del *món real*. Es caracteritza, fonamentalment, per tres elements: entitats, atributs i valors. 
 - Les *entitats* són els objectes del món real que conceptualitzem. Són identificables, és a dir, distingibles els uns dels altres. I ens interessen algunes (com a mínim una) de les seves propietats (atributs).
-Exemple: Cotxe, Alumne, Banc, Moble
+Exemple: COTXE, ALUMNE, BANC, MOBLE
 - Els *atributs* són les propietats que ens interessen de les entitats. 
 Exemple: color, edat, oficina, material
 - Els *valors* són els continguts concrets dels atributs, les determinacions concretes que assoleixen.
@@ -240,6 +240,31 @@ L'avantatge d'aquesta arquitectura en nivells és que proporciona independència
 
 - **Independència lògica**: es poden fer canvis en el nivell conceptual (afegir taules o atributs) sense que sigui necessari reescriure totes les aplicacions.
 - **Independència física**: és possible modificar la ubicació dels fitxers que contenen les dades sense que es vegin afectades les aplicacions.
+
+
+### 5. El model Entitat-Relació (ER)
+
+A l'hora de dissenyar una base de dades, cal descompondre el procés del disseny en diferents etapes, on el resultat d'una etapa és el punt d'inici de l'etapa següent. Dividint el problema simplifiquem el procés.
+Les etapes són les següents:
+- **etapa del disseny conceptual**: s'obté una estructura de la informació de la DB, indepdendent de la tecnologia a utilitzar. El resultat és un model de dades d'alt nivell. En el nostre cas, el model entitat-relació (ER)
+- **etapa de disseny lògic**: s'ajusta el model ER (resultat del disseny conceptual) al model DBMS amb el qual s'implementarà la db.
+- **estapa del disseny físic**: es transforma l'estructura obtinguda a l'etapa del disseny lògic de manera que s'assoleixi una major eficiència (mida de buffers, pàgines,...) que dependran del DBMS escollir.
+
+#### El model ER
+
+L'origen del model *entity-relationship (ER)* es troba en els treballs realitzats per Peter Chen el 1976. Posteriorment s'han desenvolupat diverses extensions i variants. Es coneix també amb el nom de model entitat-interrelació. Cal destacar que aquest model és independent del tipus de DBMS (jeràrquic, en xarxa, relacional,...).
+
+A l'hora de modelar els objectes del món real, descriurem les entitats i els seus atributs. Els valors s'indicaran un cop introduïm els registres a la db.
+
+Una entitat es representa mitjançant un rectangle amb el seu nom indicat a dins, en majúscules. Els atributs que ens interessen, s'enumeren al seu costat, en minúscules, units a l'entitat mitjançant un guió baix.
+
+Quines característiques poden tenir els atributs?
+- **Univaluat**: un atribut és univaluat si té un sol valor per a cada ocurrència d'una entitat
+- **Clau**: atribut que permet identificar l'entitat (cada instància té una clau diferent)
+- **Clau Candidata**: conjunt de claus de l'entitat (atributs que identifiquen l'entitat)
+- **Clau Primària**: atribut seleccionat d'entre totes les claus candidates com a identificador de l'entitat
+
+![Exemple d'entitat ALUMNE amb els seus atributs](images/entitat_atribut.jpg)
 
 
 ### Bibliografia
