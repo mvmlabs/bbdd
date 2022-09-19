@@ -98,16 +98,14 @@ Una transacció és tot el conjunt d’operacions que s’han
 de realitzar per a obtenir un resultat .
 ```
 
-**Funcions, components i tipus
+**Funcions, components i tipus**
 
 Un DBMS està dissenyat per a la creació, control  i manipulació d’una base de dades.  Les seves funcions essencials són tres:
 La descripció de les dades: La definició de l'esquema de la BBDD ha de permetre, una vegada dissenyat, descriure'l mitjançant un conjunt d'instruccions. Això es realitza amb un llenguatge específic denominat Data Definition Language (DDL). 
 La manipulació de les dades: L'accés a les dades, en general es realitzarà amb algun llenguatge d'alt nivell, que es recolzarà en un llenguatge específic que rep el nom genèric de Data Manipulation Language (DML). El DML pot utilitzar-se de dues formes, bé incloent sentències DML en programes escrits en llenguatge d'alt nivell, bé mitjançant programes que continguin exclusivament sentències pròpies d'aquest llenguatge. En el primer cas, el SGBD inclouria un precompilador que tradueixi instruccions DML en altres recognoscibles pel compilador del llenguatge d'alt nivell (llenguatge amfitrió).
 La utilització de les dades: L'accés a la informació de manera conversacional es refereix a la inclusió d'una interfície d'usuari que permeti introduir sentències directament per a obtenir informació. La funció de gestió de fitxers és realitzada per un mòdul gestor encarregat de la comunicació amb el SOTA i que podrà incloure funcions de control d'usuaris, recuperació enfront de fallades, ….
 
-
-
-Components
+**Components**
 A nivell extern, un SGBD podria veure's com un sistema compost per maquinari, dades, programes i usuaris.
 El maquinari és el component físic on s'emmagatzemen les dades, com ara un sistema de discos redundants o un servidor dedicat. 
 Les dades constitueixen la informació, que ha de ser el menys redundant possible. 
@@ -118,26 +116,26 @@ El mòdul gestor d'arxius administra l'emmagatzematge de les dades en arxius, ja
 Altres components identificables en un SGBD són el llenguatge de descripció de l'esquema conceptual, el llenguatge de definició d'esquemes, mòduls de privacitat i integritat, mòduls generadors d'informes i un llenguatge de consulta de propòsit general.
 El llenguatge de descripció de l'esquema conceptual ha de ser senzill i capaç d'avaluar la consistència de dades, mentre el llenguatge de definició d'esquemes, ha de permetre especificar restriccions de privacitat, seguretat i accés. Els mòduls de privacitat tenen entre les seves funcions la protecció de la BBDD enfront d'accessos no autoritzats i el mòdul d'integritat proporcionarà la integritat i coherència de les dades.
 
-Quins són els usuaris principals d’un DBMS?
+*Quins són els usuaris principals d’un DBMS?*
 Podem agrupar-los en 3 tipus diferents:
-Usuaris. Es divideixen en dos sub-grups:
-usuaris casuals: són usuaris no sofisticats, que no interactuen directament amb el sistema, sinó mitjançant alguna aplicació informàtica desenvolupada prèviament per altres persones amb aquesta finalitat.
-usuaris experts: interactuen directament amb el sistema, sense utilitzar les interfícies proporcionades per programes intermediaris. Formulen les consultes en un llenguatge de BD (normalment, SQL), des de dins de l’entorn que el SGBD posa a la seva disposició. Tradicionalment, aquest entorn ha estat una consola en què es podien escriure les consultes, però cada vegada són més freqüents entorns que permeten construir les consultes de mode visual, com autèntiques eines CASE.
-Programadors d’aplicacions. Són professionals informàtics que creen els programes que accedeixen als SGBD i que, posteriorment, són utilitzats pels usuaris que hem anomenat externs. Aquestes aplicacions es poden desenvolupar mitjançant diferents llenguatges de programació i eines externes al SGBD. Però molts SGBD comercials també inclouen entorns propis de desenvolupament i llenguatges de quarta generació que faciliten enormement la generació de formularis i informes que permeten visualitzar i modificar les dades.
-Administradors d'SGBD. Els administradors són uns usuaris especials que realitzen tasques d’administració i control centralitzat de les dades, i gestionen els permisos d’accés concedits als diferents usuaris i grups d’usuaris, per tal de garantir el funcionament correcte de la BD.
+- Usuaris. Es divideixen en dos sub-grups:
+	- usuaris casuals: són usuaris no sofisticats, que no interactuen directament amb el sistema, sinó mitjançant alguna aplicació informàtica desenvolupada prèviament per altres persones amb aquesta finalitat.
+	- usuaris experts: interactuen directament amb el sistema, sense utilitzar les interfícies proporcionades per programes intermediaris. Formulen les consultes en un llenguatge de BD (normalment, SQL), des de dins de l’entorn que el SGBD posa a la seva disposició. Tradicionalment, aquest entorn ha estat una consola en què es podien escriure les consultes, però cada vegada són més freqüents entorns que permeten construir les consultes de mode visual, com autèntiques eines CASE.
+- Programadors d’aplicacions. Són professionals informàtics que creen els programes que accedeixen als SGBD i que, posteriorment, són utilitzats pels usuaris que hem anomenat externs. Aquestes aplicacions es poden desenvolupar mitjançant diferents llenguatges de programació i eines externes al SGBD. Però molts SGBD comercials també inclouen entorns propis de desenvolupament i llenguatges de quarta generació que faciliten enormement la generació de formularis i informes que permeten visualitzar i modificar les dades.
+- Administradors d'SGBD. Els administradors són uns usuaris especials que realitzen tasques d’administració i control centralitzat de les dades, i gestionen els permisos d’accés concedits als diferents usuaris i grups d’usuaris, per tal de garantir el funcionament correcte de la BD.
+
 Els administradors han d’actuar, evidentment, per solucionar les eventuals aturades del sistema, però la seva responsabilitat fonamental consisteix, justament, a evitar que es produeixin incidents.
 La feina dels administradors no és fàcil, tot i que els SGBD incorporen cada vegada més eines per facilitar-la, i en la majoria dels casos amb interfície visual. Es tracta, per exemple, d’eines de monitoratge de rendiment, d’eines de monitoratge de seguretat, de verificadors de consistència entre índexs i dades, de gestors de còpies de seguretat, etc.
 Algunes de les tasques habituals dels administradors són:
-Crear i administrar els esquemes de la BD.
-Administrar la seguretat: autoritzacions d’accés, restriccions, etc.
-Realitzar còpies de seguretat periòdiques.
-Controlar l’espai de disc disponible.
-Vigilar la integritat de les dades.
-Observar l’evolució del rendiment del sistema i determinar quins processos consumeixen més recursos.
-Assessorar els programadors i els usuaris sobre la utilització de la BD.
-Fer canvis en el disseny físic per millorar el rendiment.
-Resoldre emergències.
-
+- Crear i administrar els esquemes de la BD.
+- Administrar la seguretat: autoritzacions d’accés, restriccions, etc.
+- Realitzar còpies de seguretat periòdiques.
+- Controlar l’espai de disc disponible.
+- Vigilar la integritat de les dades.
+- Observar l’evolució del rendiment del sistema i determinar quins processos consumeixen més recursos.
+- Assessorar els programadors i els usuaris sobre la utilització de la BD.
+- Fer canvis en el disseny físic per millorar el rendiment.
+- Resoldre emergències.
 
 **Teorema CAP (Consistency, Availability, Partition Tolerance)**
 
@@ -145,7 +143,6 @@ També conegut com a teorema de Brewer, formula que és impossible garantir simu
 - Consistència: tots els nodes veuen la mateixa dada al mateix temps.
 - Disponibilitat: la garantia que cada petició a un node rep una resposta de si ha tingut èxit o a fallat.
 - Tolerància a la partició: el sistema continua operant malgrat un error a la xarxa divideixi el sistema ( aïlli certs nodes ).
-
 
 ### 4. Representació de les dades
 Organitzem el nostre entorn en “mons”:
