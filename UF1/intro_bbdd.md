@@ -263,11 +263,28 @@ Quines característiques poden tenir els atributs?
 
 ![Exemple d'entitat ALUMNE amb els seus atributs](images/entitat_atribut.jpg)
 
+Un cop modelades les entitats, cal indicar com es relacionen entre elles.
 ```
 Una interrelació es defineix com una associació entre entitats
 ```
 
+Una interrelació pot tenir atributs, que també han de ser univaluats, han de prendre valors atòmics i estar dins d'un domini. El grau de la interrelació ens indica el nombre d’entitats que associa una interrelació.
+- **Interrelacions binàries**: interrelacions de grau dos (associa dues entitats)
+- **Interrelacions n-àries**: interrelacions de grau més gran de dos
+
+A més del grau de les interrelacions, s'ha d'indicar la seva connectivitat. La connectivitat d’una interrelació expressa el tipus de correspondència que hi ha entre les ocurrències d’entitats associades amb la interrelació.
+
+En el cas de les interrelacions binàries:
+- **Connectivitat un a un (1:1)**
+- **Connectivitat un a molts (1:M)**
+- **Connectivitat molts a molts (M:N)**
+
+![Exemple de connectivitat en interrelacions binàries](images/connectivitat_binaries.jpg)
+
+![Exemple d'indicació de dependències en interrelacions binàries](images/dependencies_binaries.jpg)
+
+
 ### Bibliografia
 
 - [**Fundamentos de bases de datos. SILBERSCHATZ, KORTH, SUDARSHAN. 6ª Edición. McGrawHill Education**](https://www.casadellibro.com/libro-fundamentos-de-bases-de-datos/9788448190330/2303933)
-- [**Bases de dades. Planas, Jaume Sistac. Edicions de la Universitat Oberta de catalunya, 1a Edició (2000)**](https://www.editorialuoc.cat/bases-de-dades)
+- [**Bases de dades. Planas, Jaume Sistac. Edicions de la Universitat Oberta de catalunya, (2012)**](https://www.editorialuoc.cat/bases-de-dades)
