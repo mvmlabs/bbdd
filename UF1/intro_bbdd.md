@@ -1,5 +1,9 @@
 ## UF1. Introducció a les bases de dades
 
+#### Activitats
+[Activitats](https://docs.google.com/document/d/1Dt3Axj2Khk7vZLJu6NXPH2ityS9nIi4oU1hZ3CgkOZI/edit?usp=sharing)
+
+
 ### 1. Introducció
 Una **dada** és una representació simbòlica (numèrica, alfabètica, …) d'una característica d’una entitat (objecte de la vida real). No té valor semàntic (sentit) per si mateixa. En canvi, si contextualitzem aquesta dada, estem generant **informació**. El ordinadors no són capaços d’interpretar la informació per si mateixos (a diferència dels éssers humans, que sí que ho podem fer). Els programes informàtics però,  necessiten dades (d’entrada) per a poder executar-se, que analitzen i transformen, i així retornar noves dades (de sortida) de valor per a l’usuari del programa.
 
