@@ -40,7 +40,7 @@ En finalitzar aquesta unitat formativa, l'alumne ha d’assolir i ser competent 
 
 En aquest apartat trobareu les activitats treballades a classe per a entendre els conceptes i d'altres per a repassar i practicar. Un cop resolts a classe, trobareu en un altre document les solucions.
 
-[Activitats]([Activitats](https://docs.google.com/document/d/1Dt3Axj2Khk7vZLJu6NXPH2ityS9nIi4oU1hZ3CgkOZI/edit?usp=sharing))
+[Activitats](https://docs.google.com/document/d/1Dt3Axj2Khk7vZLJu6NXPH2ityS9nIi4oU1hZ3CgkOZI/edit?usp=sharing)
 
 **_Fites a resoldre_**
 
