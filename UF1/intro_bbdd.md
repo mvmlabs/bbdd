@@ -32,7 +32,7 @@ En finalitzar aquesta unitat formativa, l'alumne ha d’assolir i ser competent 
 
 ### Apunts
 
-1. Introducció a les bases de dades [teoria](https://docs.google.com/document/d/144xJZkHi7V6KAhTuBCmuZM3n-rPvU15Rg6z4A853g9o/edit?usp=sharing)  [presentació](UF1/M02.UF1. Introducció a les bases de dades - Teoria.pdf)
+1. Introducció a les bases de dades [teoria](https://docs.google.com/document/d/144xJZkHi7V6KAhTuBCmuZM3n-rPvU15Rg6z4A853g9o/edit?usp=sharing) - [presentació](UF1/M02.UF1. Introducció a les bases de dades - Teoria.pdf)
 
 ### Activitats i fites
 
