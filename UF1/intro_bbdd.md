@@ -44,6 +44,10 @@ En aquest apartat trobareu les activitats treballades a classe per a entendre el
 
 **_Fites a resoldre_**
 
+[AP1. Model E-R](https://docs.google.com/document/d/1_bPSfacG7ov_1tDyjpO43-JCyCXWA5TBr3l6pf2ohxM/edit?usp=sharing)
+
+Data límit d'entrega: 
+- 1DAW: 13/10/22 a les 8.55h
 
 ### Bibliografia complementària
 
