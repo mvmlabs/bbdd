@@ -7,6 +7,10 @@ Cada unitat formativa (UF) disposa de la seva carpeta corresponent, on estaran d
 - UF3. Llenguatges SQL: DCL i extensió procedimental
 - UF4. Bases de dades objecte-relacionals
 
+**_Repositoris_**
+
+[Llista repositoris](https://docs.google.com/spreadsheets/d/1vTOsXO0asJ83K6l7oR3gQQww9n0ju5FcfTUkfvq8Lws/edit?usp=sharing)
+
 ### Bibliografia
 
 Al final del temari treballat a cada UF trobareu un apartat de bibliografia, on disposareu dels llibres i llocs web recomanats per a consultar i ampliar els continguts treballats a classe. 
