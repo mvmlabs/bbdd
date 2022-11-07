@@ -1,38 +1,41 @@
 ## UF3. Llenguatges SQL: DCL i extensió procedimental
 
-### 1. Introducció
+### Objectius de la unitat formativa
 
-Una dada és una representació simbòlica (numèrica, alfabètica, …) d'una entitat (objecte de la vida real). No té valor semàntic (sentit) per si mateixa. En canvi, si contextualitzem aquesta dada, estem generant informació. El ordinadors no són capaços d’interpretar la informació per si mateixos (a diferència dels éssers humans, que sí que ho podem fer). Els programes informàtics però,  necessiten dades (d’entrada) per a poder executar-se, que analitzen i transformen, i així retornar noves dades (de sortida) de valor per a l’usuari del programa.
+En finalitzar aquesta unitat formativa, l'alumne ha d’assolir i ser competent en les següents fites:
+1. Conèixer la normativa vigent sobre la protecció de dades.
+2. Identificar els diferents tipus d’usuaris d’una organització, per tal d’identificar-ne els privilegis.
+3. Crear, modificar i eliminar comptes d’usuaris; assignant privilegis sobre la base de dades i els seus objectes,
+garantint el compliment dels requisits de seguretat.
+4. Agrupar i desagrupar privilegis, per tal d’assignar i eliminar privilegis a usuaris, garantint el compliment dels
+requisits de seguretat.
+5. Agrupar i desagrupar grups de privilegis a usuaris, garantint el compliment dels requisits de seguretat.
+6. Assignar i desassignar rols a usuaris.
+7. Crear vistes personalitzades per a cada tipus d’usuari de la base de dades.
+8. Identificar les eines disponibles en el sistema gestor de bases de dades per editar guions.
+9. Definir guions per automatitzar tasques que gestionen la base de dades.
+10. Identificar els tipus de dades, identificadors, variables i constants.
+11. Utilitzar estructures de control de flux i llibreries de funcions.
+12. Desenvolupar procediments i funcions d’usuari.
+13. Gestionar els possibles errors dels procediments i funcions i controlar les transaccions.
+14. Utilitzar cursors per manipular les dades d’una base de dades.
+15. Utilitzar les funcions incorporades en el sistema gestor de bases de dades.
+16. Desenvolupra disparadors.
 
-Les metadades són dades sobre les dades. És tota aquella informació descriptiva sobre el context, qualitat, condició o característiques d'un recurs, dada o objecte amb la finalitat de facilitar-ne la recuperació, autentificació, avaluació, preservació i/o interoperabilitat.
+### Apunts
 
-Així, disposem de moltes dades que calen relacionar i emmagatzemar, per tal de generar coneixement i per poder accedir a la informació, en qualsevol moment. La col·lecció de dades rellevant per a una entitat (empresa, escola, …) s’anomena base de dades (database, DB).
+1. Llenguatges SQL: DCL i extensió procedimental [teoria]
 
-### Markdown
+### Activitats i fites
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**_Activitats de repàs_**
 
-```markdown
-Syntax highlighted code block
+En aquest apartat trobareu les activitats treballades a classe per a entendre els conceptes i d'altres per a repassar i practicar. Un cop resolts a classe, trobareu en un altre document les solucions.
 
-# Header 1
-## Header 2
-### Header 3
+[Activitats]
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+**_Fites a resoldre_**
 
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Bibliografia complementària
