@@ -24,7 +24,7 @@ requisits de seguretat.
 
 ### Apunts
 
-1. Llenguatges SQL: DCL i extensió procedimental [teoria]
+1. Llenguatges SQL: DCL i extensió procedimental [teoria](UF3/M02.UF3. llenguatges SQL DCL i extensió procedimental.pdf)
 
 ### Activitats i fites
 
@@ -39,3 +39,5 @@ En aquest apartat trobareu les activitats treballades a classe per a entendre el
 
 
 ### Bibliografia complementària
+
+- [** MySQL Documentation **](https://dev.mysql.com/doc/refman/8.0/en/)
