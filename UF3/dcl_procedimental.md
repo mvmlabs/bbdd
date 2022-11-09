@@ -24,7 +24,7 @@ requisits de seguretat.
 
 ### Apunts
 
-1. Llenguatges SQL: DCL i extensió procedimental [teoria](UF3/M02.UF3. llenguatges SQL DCL i extensió procedimental.pdf)
+1. Llenguatges SQL: DCL i extensió procedimental [teoria](M02.UF3. llenguatges SQL DCL i extensió procedimental.pdf)
 
 ### Activitats i fites
 
