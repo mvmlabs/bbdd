@@ -40,4 +40,8 @@ En aquest apartat trobareu les activitats treballades a classe per a entendre el
 
 ### Bibliografia complementària
 
-- [** MySQL Documentation **](https://dev.mysql.com/doc/refman/8.0/en/)
+- [**SQL in a nutshell**](https://www.oreilly.com/library/view/sql-in-a/9781492088851/)
+- [**The manga guide to databases**](https://www.amazon.es/Manga-Guide-Databases-Mana-Takahashi/dp/1593271905)
+- [**MySQL Documentation**](https://dev.mysql.com/doc/refman/8.0/en/)
+- [**MySQL Glossari**](https://dev.mysql.com/doc/refman/8.0/en/glossary.html)
+- [**MySQL in a nutshell**](https://www.oreilly.com/library/view/mysql-in-a/9780596514334/)
