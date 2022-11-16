@@ -28,6 +28,10 @@ requisits de seguretat.
 
 ### Activitats i fites
 
+[AP1. SQL Statements](https://docs.google.com/document/d/1FedVFjiB6tb2YbW8O6nZrAF8F5LQYwBk93GgHX4KFS0/edit?usp=sharing)
+
+Data límit d'entrega: 24/11/22 a les 8.55h
+
 **_Activitats de repàs_**
 
 En aquest apartat trobareu les activitats treballades a classe per a entendre els conceptes i d'altres per a repassar i practicar. Un cop resolts a classe, trobareu en un altre document les solucions.
