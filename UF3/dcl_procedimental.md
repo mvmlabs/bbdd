@@ -26,6 +26,10 @@ requisits de seguretat.
 
 1. Llenguatges SQL: DCL i extensió procedimental [teoria](M02.UF3. llenguatges SQL DCL i extensió procedimental.pdf)
 
+### Repositori
+
+[Scripts amb exemples resolts](https://github.com/mvmlabs/bbdd/tree/main/UF3/Exemples)
+
 ### Activitats i fites
 
 [AP1. SQL Statements](https://docs.google.com/document/d/1FedVFjiB6tb2YbW8O6nZrAF8F5LQYwBk93GgHX4KFS0/edit?usp=sharing)
