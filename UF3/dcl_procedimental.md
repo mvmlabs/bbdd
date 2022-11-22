@@ -40,6 +40,8 @@ Data límit d'entrega: 24/11/22 a les 8.55h
 
 En aquest apartat trobareu les activitats treballades a classe per a entendre els conceptes i d'altres per a repassar i practicar. Un cop resolts a classe, trobareu en un altre document les solucions.
 
+[AC1. Disseny bbdd. Fàbrica de productes esportius](https://forms.gle/PtsBxjZn7Wg8jKE37) Data límit d'entrega: 24/11/22 a les 8.55h
+
 [Activitats]
 
 **_Fites a resoldre_**
