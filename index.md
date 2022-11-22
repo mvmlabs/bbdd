@@ -4,8 +4,12 @@ En aquest repositori trobareu disponibles els continguts treballats a classe, ai
 Cada unitat formativa (UF) disposa de la seva carpeta corresponent, on estaran disponibles els continguts, fites a assolir i recursos.
 
 - [UF1. Introducció a les bases de dades](UF1/intro_bbdd.md)
-- UF3. Llenguatges SQL: DCL i extensió procedimental
+- [UF3. Llenguatges SQL: DCL i extensió procedimental](UF3/dcl_procedimental.md)
 - UF4. Bases de dades objecte-relacionals
+
+**_Repositoris_**
+
+[Llista repositoris](https://docs.google.com/spreadsheets/d/1vTOsXO0asJ83K6l7oR3gQQww9n0ju5FcfTUkfvq8Lws/edit?usp=sharing)
 
 ### Bibliografia
 
