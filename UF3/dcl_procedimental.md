@@ -55,3 +55,4 @@ En aquest apartat trobareu les activitats treballades a classe per a entendre el
 - [**MySQL Documentation**](https://dev.mysql.com/doc/refman/8.0/en/)
 - [**MySQL Glossari**](https://dev.mysql.com/doc/refman/8.0/en/glossary.html)
 - [**MySQL in a nutshell**](https://www.oreilly.com/library/view/mysql-in-a/9780596514334/)
+- [**MySQL Stored Procedure Programming**](https://www.oreilly.com/library/view/mysql-stored-procedure/0596100892/)
