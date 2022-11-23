@@ -36,6 +36,7 @@ requisits de seguretat.
 
 En aquest apartat trobareu les activitats treballades a classe per a entendre els conceptes i d'altres per a repassar i practicar. Un cop resolts a classe, trobareu en un altre document les solucions.
 
+[AC2. Disseny bbdd. Cadena de botigues d'esport](https://forms.gle/64Hi7aP1FmA8UKBx5) Data límit d'entrega: 29/11/22 a les 11.25h
 [AC1. Disseny bbdd. Fàbrica de productes esportius](https://forms.gle/PtsBxjZn7Wg8jKE37) Data límit d'entrega: 24/11/22 a les 8.55h
 
 [Activitats]
