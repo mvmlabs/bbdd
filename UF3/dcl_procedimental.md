@@ -38,7 +38,7 @@ En aquest apartat trobareu les activitats treballades a classe per a entendre el
 
 [AC2. Disseny bbdd. Cadena de botigues d'esport](https://forms.gle/64Hi7aP1FmA8UKBx5) Data límit d'entrega: 29/11/22 a les 11.25h
 
-[AC1. Disseny bbdd. Fàbrica de productes esportius - FINALITZADA](https://forms.gle/PtsBxjZn7Wg8jKE37) | SOLUCIÓ(https://docs.google.com/document/d/16UPwCUIhc2RhnXvPHSP7k5lTEAlhpUj6rozQ38fvdb0/edit?usp=share_link) Data límit d'entrega: 24/11/22 a les 8.55h
+[AC1. Disseny bbdd. Fàbrica de productes esportius - FINALITZADA](https://forms.gle/PtsBxjZn7Wg8jKE37) - SOLUCIÓ(https://docs.google.com/document/d/16UPwCUIhc2RhnXvPHSP7k5lTEAlhpUj6rozQ38fvdb0/edit?usp=share_link) Data límit d'entrega: 24/11/22 a les 8.55h
 
 [Activitats]
 
