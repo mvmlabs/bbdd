@@ -24,7 +24,11 @@ requisits de seguretat.
 
 ### Apunts
 
-1. Llenguatges SQL: DCL i extensió procedimental [teoria]
+1. Llenguatges SQL: DCL i extensió procedimental [teoria](M02.UF3. llenguatges SQL DCL i extensió procedimental.pdf)
+
+### Repositori
+
+[Scripts amb exemples resolts](https://github.com/mvmlabs/bbdd/tree/main/UF3/Exemples)
 
 ### Activitats i fites
 
@@ -32,10 +36,21 @@ requisits de seguretat.
 
 En aquest apartat trobareu les activitats treballades a classe per a entendre els conceptes i d'altres per a repassar i practicar. Un cop resolts a classe, trobareu en un altre document les solucions.
 
+[AC2. Disseny bbdd. Cadena de botigues d'esport](https://forms.gle/64Hi7aP1FmA8UKBx5) Data límit d'entrega: 29/11/22 a les 11.25h
+
+[AC1. Disseny bbdd. Fàbrica de productes esportius - FINALITZADA](https://forms.gle/PtsBxjZn7Wg8jKE37) - [SOLUCIÓ](https://docs.google.com/document/d/16UPwCUIhc2RhnXvPHSP7k5lTEAlhpUj6rozQ38fvdb0/edit?usp=share_link) Data límit d'entrega: 24/11/22 a les 8.55h
+
 [Activitats]
 
 **_Fites a resoldre_**
 
-
+[AP1. SQL Statements](https://docs.google.com/document/d/1FedVFjiB6tb2YbW8O6nZrAF8F5LQYwBk93GgHX4KFS0/edit?usp=sharing) Data límit d'entrega: 24/11/22 a les 8.55h
 
 ### Bibliografia complementària
+
+- [**SQL in a nutshell**](https://www.oreilly.com/library/view/sql-in-a/9781492088851/)
+- [**The manga guide to databases**](https://www.amazon.es/Manga-Guide-Databases-Mana-Takahashi/dp/1593271905)
+- [**MySQL Documentation**](https://dev.mysql.com/doc/refman/8.0/en/)
+- [**MySQL Glossari**](https://dev.mysql.com/doc/refman/8.0/en/glossary.html)
+- [**MySQL in a nutshell**](https://www.oreilly.com/library/view/mysql-in-a/9780596514334/)
+- [**MySQL Stored Procedure Programming**](https://www.oreilly.com/library/view/mysql-stored-procedure/0596100892/)
