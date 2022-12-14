@@ -1,6 +1,6 @@
 ## UF3. Llenguatges SQL: DCL i extensió procedimental
 
-### Gestió de clients
+### Projecte d'aula: Gestió de clients
 
 1 - Implementem la base de dades on desenvoluparem el projecte (**gestio_clients**). 
 
@@ -36,7 +36,7 @@ VALUES ('AR001', 'pantaló', 20.50, 50), ('AR002', 'camisa', 17.50, 75), ('AR003
 SELECT * FROM article;
 ```
 
-5 - Implementem la taula per a registrar canvis a la taula d'articles, mitjançant el trigger (log_article):
+5 - Implementem la taula **log_article** per a registrar canvis a la taula d'articles, mitjançant el trigger vinculat a la taula article:
 
 ```
 CREATE TABLE IF NOT EXISTS log_article (
