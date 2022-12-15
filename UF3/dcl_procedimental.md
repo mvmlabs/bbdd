@@ -48,6 +48,7 @@ En aquest apartat trobareu les activitats treballades a classe per a entendre el
 
 ### Bibliografia complementària
 
+- [**SQL basics cheat sheet**](https://drive.google.com/file/d/1mg2K6SeDVSiCb_tDUR4wv3cEgHI5_Z4v/view?usp=share_link)
 - [**SQL in a nutshell**](https://www.oreilly.com/library/view/sql-in-a/9781492088851/)
 - [**The manga guide to databases**](https://www.amazon.es/Manga-Guide-Databases-Mana-Takahashi/dp/1593271905)
 - [**MySQL Documentation**](https://dev.mysql.com/doc/refman/8.0/en/)
