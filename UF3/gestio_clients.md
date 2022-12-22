@@ -91,3 +91,81 @@ delimiter ;
 
 UPDATE article SET preu = 105.5 WHERE codi_article = 'AR007';
 ```
+
+9 - Implementem dos triggers de control en la inserció i modificació d'articles. El primer, avisarà que no es poden inserir articles si la quantitat és 0 (declarem una variable de sistema). En el segon, en canvi, declarem variables locals i controlarem amb un valor inicial (en cas que s'actualizti amb un preu negatiu). En tots dos casos, executem les sentències corresponents per a comprovar el bon funcionament dels triggers:
+
+```
+delimiter //
+
+CREATE TRIGGER article_bi BEFORE INSERT ON article
+  FOR EACH ROW
+  BEGIN
+    IF NEW.quantitat < 0 THEN
+    	SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'No es pot inserir un producte amb quantitat 0';
+    END IF;
+  END;
+//
+
+INSERT INTO article (codi_article, nom_article, preu, quantitat) 
+VALUES ('AR005', 'faldilla', 25.15, 0);
+
+delimiter //
+
+CREATE TRIGGER article_bu BEFORE UPDATE ON article
+  FOR EACH ROW
+  BEGIN
+    IF NEW.preu < 0 THEN
+    	SET NEW.preu = 0;
+    ELSEIF NEW.preu > 200 THEN
+        SET NEW.preu = 150;
+    END IF;
+
+  END;
+//
+
+UPDATE article SET preu = 0 WHERE codi_article = 'AR007';
+```
+
+10 - Volem disposar de diverses estadístiques. Per això, es crearà una taula: 
+
+```
+CREATE TABLE IF NOT EXISTS stats_article (
+	id_accio INT NOT NULL AUTO_INCREMENT,
+	total_productes INT DEFAULT NULL,
+	total_quantitat INT DEFAULT NULL,
+	data DATETIME DEFAULT NULL,
+	PRIMARY KEY (id_accio)
+);
+```
+
+Aquesta taula s'omplirà amb els valors calculats per un trigger, en inserir un nou article:
+
+```
+delimiter //
+
+CREATE TRIGGER article_ai AFTER INSERT ON article
+  FOR EACH ROW
+  BEGIN
+  
+    DECLARE total_productes INT;
+    DECLARE total_quantitat INT;
+    
+    SELECT COUNT(*) 
+    INTO total_productes
+    FROM article;
+    
+    SELECT SUM(preu*quantitat) 
+    INTO total_quantitat
+    FROM article;
+      
+    IF total_productes > 0 THEN
+        INSERT INTO stats_article(id_accio, total_productes, total_quantitat, data)
+        VALUES(NULL, total_productes, total_quantitat, NOW());
+    END IF;
+
+  END;
+//
+
+INSERT INTO article (codi_article, nom_article, preu, quantitat) 
+VALUES ('AR008', 'pijama', 20.5, 50);
+```
