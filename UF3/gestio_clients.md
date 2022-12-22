@@ -128,7 +128,7 @@ UPDATE article SET preu = 0 WHERE codi_article = 'AR007';
 
 En intentar inserir un article amb quantitat 0 (trigger *article_bi*), apareix un missatge indicant l'error:
 
-![Consola MySQL Workbench que mostra l'error](image.jpg)
+![Consola MySQL Workbench que mostra l'error](images/mysql_error.jpg)
 
 10 - Volem disposar de diverses estadístiques. Per això, es crearà una taula: 
 
