@@ -44,6 +44,8 @@ En aquest apartat trobareu les activitats treballades a classe per a entendre el
 
 **_Fites a resoldre_**
 
+[Projecte 1 - gestió de pràctiques](https://docs.google.com/document/d/16jUH7HZRtoEnpK8JGn5w-vNC-HFFrnAn3b4yfgJRF-U/edit?usp=sharing) Data límit d'entrega: 19/01/23 a les 8.55h
+
 [AP1. SQL Statements - FINALITZADA](https://docs.google.com/document/d/1FedVFjiB6tb2YbW8O6nZrAF8F5LQYwBk93GgHX4KFS0/edit?usp=sharing) Data límit d'entrega: 24/11/22 a les 8.55h
 
 ### Bibliografia complementària
