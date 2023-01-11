@@ -204,4 +204,22 @@ DELETE FROM article WHERE codi_article = 'AR009';
 SELECT * FROM deleted_article;
 
 ```
+12 - Comencem a implementar procediments que permetin fer crides automàtiques a la bbdd. El primer *procedure* ens retornarà el llistat de tots els articles:
 
+```
+delimiter //
+CREATE PROCEDURE llista_articles()
+SELECT * FROM article;//
+delimiter ;
+
+```
+
+Per executar-lo, cal fer una crida mitjançant la instrucció CALL:
+
+```
+CALL llista_articles();
+```
+
+En aquest cas, veurem en MySQL Workbench que el procedure apareix en una secció pròpia, ja que està relacionat amb la base de dades:
+
+![Vista de MySQL Workbench amb l'opció 'Stored Procedures'](images/basic_procedure.png)
