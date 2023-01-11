@@ -223,3 +223,15 @@ CALL llista_articles();
 En aquest cas, veurem en MySQL Workbench que el procedure apareix en una secció pròpia, ja que està relacionat amb la base de dades:
 
 ![Vista de MySQL Workbench amb l'opció 'Stored Procedures'](images/basic_procedure.png)
+
+13 - El segon procediment permetrà actualitzar el preu d'un article, indicant el seu codi:
+
+```
+delimiter //
+CREATE PROCEDURE actualitza_article(IN proc_codi VARCHAR(6), IN proc_preu FLOAT)
+UPDATE article SET preu = proc_preu WHERE codi_article = proc_codi;//
+delimiter ;
+
+CALL actualitza_article('AR007', 3.75);
+
+```
