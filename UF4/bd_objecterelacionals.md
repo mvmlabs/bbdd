@@ -10,7 +10,7 @@ En finalitzar aquesta unitat formativa, l'alumne ha d’assolir i ser competent 
 
 ### Apunts
 
-1. Bases de dades NoSQL [teoria](M02.UF4. Bases de dades NoSQL.pdf)
+1. Bases de dades NoSQL: [teoria](M02.UF4. Bases de dades NoSQL.pdf)
 
 ### Repositori
 
