@@ -5,7 +5,7 @@ Cada unitat formativa (UF) disposa de la seva carpeta corresponent, on estaran d
 
 - [UF1. Introducció a les bases de dades](UF1/intro_bbdd.md)
 - [UF3. Llenguatges SQL: DCL i extensió procedimental](UF3/dcl_procedimental.md)
-- UF4. Bases de dades objecte-relacionals
+- [UF4. Bases de dades NoSQL](UF4/bd_objecterelacionals.md)
 
 **_Repositoris_**
 
