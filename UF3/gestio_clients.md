@@ -122,6 +122,7 @@ CREATE TRIGGER article_bu BEFORE UPDATE ON article
 
   END;
 //
+delimiter ;
 
 UPDATE article SET preu = 0 WHERE codi_article = 'AR007';
 ```
@@ -169,7 +170,68 @@ CREATE TRIGGER article_ai AFTER INSERT ON article
 
   END;
 //
+delimiter ;
 
 INSERT INTO article (codi_article, nom_article, preu, quantitat) 
 VALUES ('AR008', 'pijama', 20.5, 50);
+```
+
+11 - També es vol mantenir un registre dels articles eliminats. És a dir, cal tenir la taula d'articles neta, per això s'haurà d'anar esborrant (si és necessari) però en cas que s'elimini un article, es vol enregistrar qui ha realitzat aquesta operació i quan, a més dels atributs de l'article:
+
+```
+CREATE TABLE IF NOT EXISTS deleted_article (
+	codi_article VARCHAR(6) NOT NULL,
+	nom_article VARCHAR(25) NOT NULL,
+	preu FLOAT DEFAULT NULL,
+	quantitat INT DEFAULT NULL,
+  usuari VARCHAR(25) NOT NULL,
+	data DATETIME NOT NULL,
+	PRIMARY KEY (codi_article)
+);
+
+delimiter //
+CREATE TRIGGER article_ad AFTER DELETE ON article
+  FOR EACH ROW
+  BEGIN
+	INSERT INTO deleted_article (codi_article, nom_article, preu, quantitat, usuari, data)
+	VALUES (OLD.codi_article, OLD.nom_article, OLD.preu, OLD.quantitat, CURRENT_USER(),NOW());
+  END;
+//
+
+delimiter ;
+
+DELETE FROM article WHERE codi_article = 'AR009';
+SELECT * FROM deleted_article;
+
+```
+12 - Comencem a implementar procediments que permetin fer crides automàtiques a la bbdd. El primer *procedure* ens retornarà el llistat de tots els articles:
+
+```
+delimiter //
+CREATE PROCEDURE llista_articles()
+SELECT * FROM article;//
+delimiter ;
+
+```
+
+Per executar-lo, cal fer una crida mitjançant la instrucció CALL:
+
+```
+CALL llista_articles();
+```
+
+En aquest cas, veurem en MySQL Workbench que el procedure apareix en una secció pròpia, ja que està relacionat amb la base de dades:
+
+![Vista de MySQL Workbench amb l'opció 'Stored Procedures'](images/basic_procedure.png)
+
+13 - El segon procediment permetrà actualitzar el preu d'un article, indicant el seu codi:
+
+```
+delimiter //
+CREATE PROCEDURE actualitza_article(IN proc_codi VARCHAR(6), IN proc_preu FLOAT)
+UPDATE article SET preu = proc_preu WHERE codi_article = proc_codi;//
+delimiter ;
+
+CALL actualitza_article('AR007', 3.75);
+
 ```
