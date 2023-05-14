@@ -1,7 +1,8 @@
 import pymongo
 from pymongo import MongoClient
 
-MONGODB_URI = 'mongodb+srv://ralaman:xRcHfqkVI2PPOg8g@cluster0.dwgoiwc.mongodb.net/?retryWrites=true&w=majority'
+#indicar la url del servidor 
+MONGODB_URI = 'url'
 
 client = MongoClient(MONGODB_URI)
 
@@ -13,7 +14,7 @@ print('*******************************************')
 
 db = client['gestio_articles']
 col = db['articles']
-'''
+
 col.insert_one({
     'codi': 'ART001',
     'nom': 'vestit',
@@ -52,7 +53,7 @@ col.insert_many([
     'preu': 29.99
    },
 ])
-'''
+
 print(db.name)
 
 for x in col.find({"quantitat":{"$gte":10}}):
